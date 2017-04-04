@@ -1,0 +1,25 @@
+{
+  "name": "technews",
+  "version": "0.0.1",
+  "description": "technews API service using serverless, AWS lambda, API gateway...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LIU9293/technews-server.git"
+  },
+  "author": "Lock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LIU9293/technews-server/issues"
+  },
+  "homepage": "https://github.com/LIU9293/technews-server#readme",
+  "dependencies": {
+    "node-fetch": "1.6.3"
+  },
+  "devDependencies": {
+    "serverless-offline": "3.13.1"
+  }
+}
