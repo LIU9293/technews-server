@@ -41,3 +41,27 @@ functions:
               paths:
                 user: true
                 repoName: true
+  coinsPriceByMarket:
+    handler: index.coinsPriceByMarket
+    description: get coins price in single market
+    events:
+      - http:
+          path: price/market/{market}
+          method: get
+          integration: lambda
+          request:
+            parameters:
+              paths:
+                market: true
+  coinPrice:
+    handler: index.coinPrice
+    description: get one coin price in all markets
+    events:
+      - http:
+          path: price/coin/{coin}
+          method: get
+          integration: lambda
+          request:
+            parameters:
+              paths:
+                coin: true
